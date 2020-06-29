@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <mat-card>
+    <h2>Please Enter the OTP</h2>
+    <div>
+      <ng-otp-input
+        #ngOtpInput
+        [config]="{ length: 6 }"
+        (onInputChange)="onOtpChange($event)"
+      ></ng-otp-input>
+    </div>
+    <div class="button">
+      <button mat-raised-button color="primary" (click)="confirmOtp()">
+        Confirm OTP
+      </button>
+    </div>
+  </mat-card>
+</div>

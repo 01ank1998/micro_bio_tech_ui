@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <mat-card>
+    <h2>Login</h2>
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Enter your mobile number</mat-label>
+        <span matPrefix>+91 &nbsp;</span>
+        <input
+          type="tel"
+          matInput
+          placeholder="555-555-1234"
+          [(ngModel)]="mobileInput"
+        />
+      </mat-form-field>
+    </div>
+    <div class="button">
+      <button mat-raised-button color="primary" (click)="sendOtp()">
+        Send OTP
+      </button>
+    </div>
+  </mat-card>
+</div>
