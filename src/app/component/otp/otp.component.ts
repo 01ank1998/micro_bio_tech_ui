@@ -36,6 +36,10 @@ export class OtpComponent implements OnInit {
           this._snackBar.open(`Login Successfull`, "OK", {
             duration: 2000,
           });
+        } else {
+          this._snackBar.open(`Login Failed`, "OK", {
+            duration: 2000,
+          });
         }
       });
   }
